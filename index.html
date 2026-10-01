@@ -1,0 +1,113 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Bilingual English and Kazakh HTML and CSS practice quiz for Web Technologies weeks 1–3.">
+  <title>Web Technologies Quiz | HTML & CSS</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="shell header-inner">
+      <a class="brand" href="index.html">WT<span>QUIZ</span></a>
+      <span class="header-note">HTML · CSS · FLEXBOX · GRID</span>
+    </div>
+  </header>
+
+  <main class="shell">
+    <section class="hero" aria-labelledby="page-title">
+      <p class="eyebrow">WEEKS 01–03 · ASSIGNMENTS 01–03</p>
+      <h1 id="page-title">Web Technologies <span>Quiz</span></h1>
+      <p class="hero-lead">Learn the tags, selectors, properties and layouts you used in class and in your projects.</p>
+      <p class="translation">Сабақ пен үй жұмыстарында қолданған тегтерді, селекторларды, CSS қасиеттерін және орналасу тәсілдерін қайтала.</p>
+    </section>
+
+    <section class="panel setup-panel" id="setup" aria-labelledby="setup-title">
+      <div class="section-heading">
+        <div>
+          <p class="eyebrow">YOUR PRACTICE</p>
+          <h2 id="setup-title">Choose a quiz</h2>
+          <p class="translation">Куиз түрін таңда</p>
+        </div>
+        <div class="question-count"><strong id="bank-count">0</strong><span>questions<br><small>сұрақ</small></span></div>
+      </div>
+
+      <div class="setup-grid">
+        <label class="field">
+          <span>Topic</span><small>Тақырып</small>
+          <select id="topic-select"></select>
+        </label>
+        <label class="field">
+          <span>Length</span><small>Сұрақ саны</small>
+          <select id="length-select">
+            <option value="20">20 questions · 20 сұрақ</option>
+            <option value="40">40 questions · 40 сұрақ</option>
+            <option value="all">All available · Барлығы</option>
+          </select>
+        </label>
+        <label class="field">
+          <span>Mode</span><small>Режим</small>
+          <select id="mode-select">
+            <option value="practice">Practice · Жаттығу</option>
+            <option value="exam">Exam · Емтихан</option>
+          </select>
+        </label>
+      </div>
+      <p class="mode-hint" id="mode-hint">Practice shows an explanation after each answer. <small>Жаттығу режимінде әр жауаптан кейін түсіндірме шығады.</small></p>
+      <p class="source-hint">W1–W3 = lecture weeks · A1–A3 = assignments <small>W1–W3 — лекция апталары · A1–A3 — үй жұмыстары</small></p>
+      <button class="button primary start-button" id="start-button" type="button">Start quiz <small>Куизді бастау</small></button>
+    </section>
+
+    <section class="quiz-view" id="quiz" aria-label="Quiz" hidden>
+      <div class="quiz-toolbar">
+        <button class="text-button" id="back-to-setup" type="button">← Change quiz <small>Куизді өзгерту</small></button>
+        <span class="progress-label" id="progress-label"></span>
+      </div>
+      <div class="progress-track" role="progressbar" id="progressbar" aria-label="Quiz progress" aria-valuemin="0" aria-valuemax="100" aria-valuenow="0"><span id="progress-fill"></span></div>
+      <article class="panel question-panel">
+        <div class="question-meta"><span class="topic-badge" id="question-topic"></span><span class="source-label" id="question-source"></span></div>
+        <h2 id="question-en"></h2>
+        <p class="translation question-kk" id="question-kk" lang="kk"></p>
+        <div class="answers" id="answers" role="group" aria-label="Answer choices"></div>
+        <div class="feedback" id="feedback" aria-live="polite" hidden>
+          <strong id="feedback-title"></strong>
+          <p id="feedback-en"></p>
+          <p class="translation" id="feedback-kk" lang="kk"></p>
+        </div>
+      </article>
+      <div class="quiz-actions">
+        <button class="button secondary" id="prev-button" type="button">← Previous <small>Алдыңғы</small></button>
+        <button class="button primary" id="next-button" type="button">Next → <small>Келесі</small></button>
+      </div>
+      <p class="keyboard-hint">Tip: press 1–4 to choose an answer. <span lang="kk">Кеңес: жауапты таңдау үшін 1–4 пернесін бас.</span></p>
+    </section>
+
+    <section class="result-view" id="result" aria-labelledby="result-title" hidden>
+      <div class="panel result-panel">
+        <p class="eyebrow">QUIZ COMPLETE</p>
+        <h2 id="result-title">Your result</h2>
+        <p class="translation">Сенің нәтижең</p>
+        <div class="score-line"><strong id="score-value"></strong><span id="score-percent"></span></div>
+        <p class="result-message" id="result-message"></p>
+        <p class="translation" id="result-message-kk" lang="kk"></p>
+        <div class="result-actions">
+          <button class="button primary" id="retry-wrong" type="button">Retry mistakes <small>Қателерді қайталау</small></button>
+          <button class="button secondary" id="new-quiz" type="button">New quiz <small>Жаңа куиз</small></button>
+        </div>
+      </div>
+      <section class="review-section" aria-labelledby="review-title">
+        <div class="section-heading">
+          <div><p class="eyebrow">LEARN FROM MISTAKES</p><h2 id="review-title">Review</h2><p class="translation">Қателерді талдау</p></div>
+          <span class="review-count" id="review-count"></span>
+        </div>
+        <div id="review-list"></div>
+      </section>
+    </section>
+  </main>
+
+  <footer class="site-footer"><div class="shell">Web Technologies · Weeks 1–3 · HTML & CSS <span>Offline practice · Интернетсіз жұмыс істейді</span></div></footer>
+  <script src="questions.js"></script>
+  <script src="quiz.js"></script>
+</body>
+</html>
