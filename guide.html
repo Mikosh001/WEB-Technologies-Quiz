@@ -1,0 +1,248 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="English and Kazakh quick reference for the Web Technologies HTML and CSS quiz.">
+  <title>Quick Guide | Web Technologies Quiz</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="shell header-inner">
+      <a class="brand" href="index.html">WT<span>QUIZ</span></a>
+      <a class="header-guide" href="index.html">Take the quiz <small lang="kk">Куизге өту</small></a>
+    </div>
+  </header>
+
+  <main class="shell guide-main">
+    <div class="guide-intro">
+      <p class="eyebrow">WEEKS 01–03 · ASSIGNMENTS 01–03</p>
+      <h1>Quick answer guide</h1>
+      <p>See a keyword in the quiz? Remember the short answer beside it.</p>
+      <p class="translation" lang="kk">Куизде термин кездессе, қасындағы қысқа жауабын есіңе түсір.</p>
+    </div>
+
+    <nav class="guide-nav" aria-label="Guide topics">
+      <a href="#web">Web <small>Веб</small></a>
+      <a href="#html">HTML <small>Құрылым</small></a>
+      <a href="#content">Content <small>Мазмұн</small></a>
+      <a href="#tables">Tables <small>Кестелер</small></a>
+      <a href="#forms">Forms <small>Формалар</small></a>
+      <a href="#selectors">Selectors <small>Селекторлар</small></a>
+      <a href="#box">Box model <small>Аралықтар</small></a>
+      <a href="#effects">Effects <small>Әсерлер</small></a>
+      <a href="#flex">Flexbox <small>Flexbox</small></a>
+      <a href="#grid">Grid <small>Grid</small></a>
+      <a href="#responsive">Responsive <small>Адаптив</small></a>
+    </nav>
+
+    <section class="guide-section" id="web">
+      <h2>01 · Web basics <small lang="kk">Веб негіздері</small></h2>
+      <dl>
+        <div><dt>Internet</dt><dd>Global network of computers.<small lang="kk">Компьютерлердің әлемдік желісі.</small></dd></div>
+        <div><dt>World Wide Web</dt><dd>Linked websites and pages on the Internet.<small lang="kk">Интернеттегі өзара байланысқан сайттар мен беттер.</small></dd></div>
+        <div><dt>Client / server</dt><dd>Browser requests; server responds.<small lang="kk">Браузер сұрайды, сервер жауап береді.</small></dd></div>
+        <div><dt>HTML / CSS / JavaScript</dt><dd>Structure / appearance / behavior.<small lang="kk">Құрылым / сыртқы көрініс / әрекет.</small></dd></div>
+        <div><dt>Developer Tools</dt><dd>Inspect and debug a webpage in the browser.<small lang="kk">Браузерде бетті тексеру және қателерді табу.</small></dd></div>
+        <div><dt><code>index.html</code></dt><dd>Usual entry page of a GitHub Pages project site.<small lang="kk">GitHub Pages жобасының әдеттегі бастапқы беті.</small></dd></div>
+      </dl>
+    </section>
+
+    <section class="guide-section" id="html">
+      <h2>02 · HTML structure <small lang="kk">HTML құрылымы</small></h2>
+      <dl>
+        <div><dt>Tag / element</dt><dd>A tag is markup such as <code>&lt;p&gt;</code>; an element includes tags and content.<small lang="kk">Тег — <code>&lt;p&gt;</code> белгісі; элементке тегтер мен мазмұн кіреді.</small></dd></div>
+        <div><dt><code>&lt;!DOCTYPE html&gt;</code></dt><dd>Declares an HTML5 document and standards mode.<small lang="kk">HTML5 құжатын және стандартты режимді білдіреді.</small></dd></div>
+        <div><dt><code>&lt;html&gt;</code></dt><dd>Root element wrapping the document.<small lang="kk">Бүкіл құжатты қоршайтын түбір элемент.</small></dd></div>
+        <div><dt><code>&lt;head&gt;</code> / <code>&lt;body&gt;</code></dt><dd>Metadata / visible page content.<small lang="kk">Метадерек / бетте көрінетін мазмұн.</small></dd></div>
+        <div><dt><code>&lt;title&gt;</code></dt><dd>Text shown in the browser tab, not the page heading.<small lang="kk">Браузер қойындысындағы атау, беттегі тақырып емес.</small></dd></div>
+        <div><dt><code>lang="en"</code></dt><dd>Declares the page's main language.<small lang="kk">Беттің негізгі тілін көрсетеді.</small></dd></div>
+        <div><dt><code>charset="utf-8"</code></dt><dd>Character encoding; supports Kazakh letters.<small lang="kk">Таңбалар кодталуы; қазақ әріптерін қолдайды.</small></dd></div>
+        <div><dt>Viewport meta</dt><dd>Lets responsive CSS use the device width correctly.<small lang="kk">Адаптивтік CSS-тің құрылғы енін дұрыс қолдануына көмектеседі.</small></dd></div>
+        <div><dt><code>&lt;div&gt;</code> / <code>&lt;span&gt;</code></dt><dd>Generic block / generic inline element.<small lang="kk">Жалпы блок / жол ішіндегі жалпы элемент.</small></dd></div>
+        <div><dt><code>&lt;header&gt;</code> / <code>&lt;nav&gt;</code></dt><dd>Introductory area / navigation links.<small lang="kk">Кіріспе бөлік / навигациялық сілтемелер.</small></dd></div>
+        <div><dt><code>&lt;main&gt;</code> / <code>&lt;footer&gt;</code></dt><dd>Primary content / closing information.<small lang="kk">Негізгі мазмұн / қорытынды ақпарат.</small></dd></div>
+        <div><dt><code>&lt;section&gt;</code> / <code>&lt;aside&gt;</code></dt><dd>Thematic section / related supporting content.<small lang="kk">Тақырыптық бөлім / қатысты қосымша ақпарат.</small></dd></div>
+      </dl>
+    </section>
+
+    <section class="guide-section" id="content">
+      <h2>03 · Text, links &amp; images <small lang="kk">Мәтін, сілтеме және сурет</small></h2>
+      <dl>
+        <div><dt><code>&lt;h1&gt;</code> to <code>&lt;h6&gt;</code></dt><dd>Headings from highest to lowest level.<small lang="kk">Ең жоғарыдан ең төменге дейінгі тақырыптар.</small></dd></div>
+        <div><dt><code>&lt;p&gt;</code> / <code>&lt;br&gt;</code> / <code>&lt;hr&gt;</code></dt><dd>Paragraph / line break / thematic break.<small lang="kk">Абзац / жаңа жол / тақырыптық бөліну.</small></dd></div>
+        <div><dt><code>&lt;a href="..."&gt;</code></dt><dd>Clickable link; <code>href</code> is its destination.<small lang="kk">Басылатын сілтеме; <code>href</code> — баратын мекенжайы.</small></dd></div>
+        <div><dt><code>href="#gallery"</code></dt><dd>Jumps to <code>id="gallery"</code> on the same page.<small lang="kk">Сол беттегі <code>id="gallery"</code> элементіне апарады.</small></dd></div>
+        <div><dt><code>&lt;img src="..." alt="..."&gt;</code></dt><dd><code>src</code> is the image path; <code>alt</code> describes the image.<small lang="kk"><code>src</code> — файл жолы; <code>alt</code> — сурет сипаттамасы.</small></dd></div>
+        <div><dt><code>&lt;figure&gt;</code> / <code>&lt;figcaption&gt;</code></dt><dd>Media group / its caption.<small lang="kk">Сурет тобы / оның түсіндірме жазуы.</small></dd></div>
+        <div><dt><code>loading="lazy"</code></dt><dd>Defers an off-screen image until needed.<small lang="kk">Экраннан тыс суретті қажет болғанда жүктейді.</small></dd></div>
+        <div><dt><code>aria-label</code> / <code>aria-labelledby</code></dt><dd>Accessible name / name taken from another element's ID.<small lang="kk">Қолжетімді атау / басқа элементтің ID-інен алынған атау.</small></dd></div>
+        <div><dt><code>tabindex="0"</code></dt><dd>Makes an element reachable with the Tab key.<small lang="kk">Элементке Tab пернесімен жетуге мүмкіндік береді.</small></dd></div>
+        <div><dt>Favicon</dt><dd>Small browser-tab icon, often linked with <code>rel="icon"</code>.<small lang="kk">Браузер қойындысындағы шағын белгі, әдетте <code>rel="icon"</code> арқылы қосылады.</small></dd></div>
+      </dl>
+    </section>
+
+    <section class="guide-section" id="tables">
+      <h2>04 · Lists &amp; tables <small lang="kk">Тізімдер мен кестелер</small></h2>
+      <dl>
+        <div><dt><code>&lt;ul&gt;</code> / <code>&lt;ol&gt;</code> / <code>&lt;li&gt;</code></dt><dd>Bulleted list / numbered list / one list item.<small lang="kk">Маркерлі тізім / нөмірленген тізім / бір тізім элементі.</small></dd></div>
+        <div><dt><code>&lt;table&gt;</code> / <code>&lt;tr&gt;</code></dt><dd>Table / one table row.<small lang="kk">Кесте / бір кесте жолы.</small></dd></div>
+        <div><dt><code>&lt;th&gt;</code> / <code>&lt;td&gt;</code></dt><dd>Header cell / data cell. Neither tag means a whole row or column.<small lang="kk">Тақырып ұяшығы / дерек ұяшығы. Екеуі де тұтас жол не баған емес.</small></dd></div>
+        <div><dt><code>colspan</code> / <code>rowspan</code></dt><dd>One cell spans columns / rows.<small lang="kk">Бір ұяшық бірнеше бағанды / жолды қамтиды.</small></dd></div>
+        <div><dt><code>&lt;caption&gt;</code></dt><dd>Title or description of the whole table.<small lang="kk">Бүкіл кестенің атауы не сипаттамасы.</small></dd></div>
+        <div><dt><code>&lt;thead&gt;</code> / <code>&lt;tbody&gt;</code> / <code>&lt;tfoot&gt;</code></dt><dd>Header / main / footer row groups.<small lang="kk">Тақырып / негізгі / қорытынды жолдар тобы.</small></dd></div>
+        <div><dt><code>scope="col"</code> / <code>scope="row"</code></dt><dd>Header labels a column / a row.<small lang="kk">Тақырып бағанды / жолды сипаттайды.</small></dd></div>
+        <div><dt><code>border-collapse: collapse</code></dt><dd>Joins adjacent table-cell borders into single lines.<small lang="kk">Көршілес ұяшық жиектерін бір сызыққа біріктіреді.</small></dd></div>
+      </dl>
+    </section>
+
+    <section class="guide-section" id="forms">
+      <h2>05 · Forms &amp; attributes <small lang="kk">Формалар мен атрибуттар</small></h2>
+      <dl>
+        <div><dt><code>&lt;form&gt;</code></dt><dd>Groups user-input controls.<small lang="kk">Пайдаланушы енгізу элементтерін топтайды.</small></dd></div>
+        <div><dt><code>&lt;label for="x"&gt;</code></dt><dd>Labels the control whose <code>id="x"</code>.<small lang="kk"><code>id="x"</code> болатын өрісті атайды.</small></dd></div>
+        <div><dt><code>id</code> / <code>name</code></dt><dd>Unique page identifier / key used in submitted form data.<small lang="kk">Беттегі бірегей атау / жіберілетін форма дерегінің кілті.</small></dd></div>
+        <div><dt><code>type="text"</code> / <code>type="email"</code></dt><dd>General text / email-format input.<small lang="kk">Жалпы мәтін / пошта пішіміндегі енгізу.</small></dd></div>
+        <div><dt><code>type="radio"</code></dt><dd>One choice from inputs sharing the same <code>name</code>.<small lang="kk">Бірдей <code>name</code> бар топтан бір ғана таңдау.</small></dd></div>
+        <div><dt><code>type="checkbox"</code></dt><dd>Independent choices; several may be checked.<small lang="kk">Тәуелсіз таңдаулар; бірнешеуін белгілеуге болады.</small></dd></div>
+        <div><dt><code>&lt;select&gt;</code> / <code>&lt;option&gt;</code></dt><dd>Drop-down control / one choice in it.<small lang="kk">Ашылмалы тізім / ондағы бір нұсқа.</small></dd></div>
+        <div><dt><code>value</code></dt><dd>Data value associated with an input or selected option.<small lang="kk">Input не таңдалған option үшін қолданылатын дерек мәні.</small></dd></div>
+        <div><dt><code>&lt;textarea&gt;</code></dt><dd>Multi-line text field; <code>resize: none</code> stops manual resizing.<small lang="kk">Көпжолды мәтін өрісі; <code>resize: none</code> өлшемін қолмен өзгертуді тоқтатады.</small></dd></div>
+        <div><dt><code>placeholder</code> / <code>required</code></dt><dd>Temporary hint / must be filled before normal submission.<small lang="kk">Уақытша нұсқау / жіберу алдында міндетті түрде толтыру.</small></dd></div>
+        <div><dt><code>maxlength</code></dt><dd>Maximum number of characters the user can enter.<small lang="kk">Енгізуге болатын таңбалардың ең көп саны.</small></dd></div>
+        <div><dt><code>selected</code> / <code>disabled</code></dt><dd>Initially chosen option / unavailable option.<small lang="kk">Бастапқыда таңдалған / таңдауға болмайтын нұсқа.</small></dd></div>
+        <div><dt><code>&lt;button type="submit"&gt;</code></dt><dd>Starts form submission after browser validation.<small lang="kk">Браузер тексергеннен кейін форманы жіберуді бастайды.</small></dd></div>
+      </dl>
+    </section>
+
+    <section class="guide-section" id="selectors">
+      <h2>06 · CSS &amp; selectors <small lang="kk">CSS және селекторлар</small></h2>
+      <dl>
+        <div><dt>Inline / internal / external CSS</dt><dd><code>style="..."</code> / <code>&lt;style&gt;</code> / linked <code>.css</code> file.<small lang="kk">Элемент ішіндегі style / HTML ішіндегі style тегі / бөлек CSS файлы.</small></dd></div>
+        <div><dt><code>&lt;link rel="stylesheet" href="..."&gt;</code></dt><dd>Connects an external CSS file in <code>&lt;head&gt;</code>.<small lang="kk">Сыртқы CSS файлын <code>&lt;head&gt;</code> ішінде қосады.</small></dd></div>
+        <div><dt><code>p</code> / <code>.card</code> / <code>#title</code> / <code>*</code></dt><dd>Element / class / ID / all-elements selectors.<small lang="kk">Элемент / класс / ID / барлық элемент селекторлары.</small></dd></div>
+        <div><dt>Class / ID</dt><dd>Class is reusable; an ID should be unique on the page.<small lang="kk">Класс қайталанады; ID бетте бірегей болуы керек.</small></dd></div>
+        <div><dt>Basic specificity</dt><dd>Inline style &gt; ID &gt; class &gt; element, assuming normal competing rules.<small lang="kk">Қарапайым жағдайда inline style &gt; ID &gt; класс &gt; элемент.</small></dd></div>
+        <div><dt><code>.radio label</code> / <code>.grid &gt; .item</code></dt><dd>Any descendant label / direct child item.<small lang="kk">Ішіндегі кез келген label / тікелей бала item.</small></dd></div>
+        <div><dt><code>li + li</code> / <code>a, button</code></dt><dd>Immediately following sibling / one rule for both selectors.<small lang="kk">Бірден кейінгі көрші / екі селекторға ортақ ереже.</small></dd></div>
+        <div><dt><code>[aria-current="page"]</code></dt><dd>Elements with that exact attribute value.<small lang="kk">Атрибутының мәні дәл сондай элементтер.</small></dd></div>
+        <div><dt><code>:hover</code> / <code>:focus-visible</code></dt><dd>Pointer over element / visible keyboard focus.<small lang="kk">Меңзер үстінде / пернетақта фокусы көрінгенде.</small></dd></div>
+        <div><dt><code>:nth-child(even)</code> / <code>::after</code></dt><dd>Even-positioned siblings / pseudo-element after content.<small lang="kk">Жұп орында тұрған көршілер / мазмұн соңындағы псевдоэлемент.</small></dd></div>
+        <div><dt><code>:root</code> / <code>var(--sea)</code></dt><dd>Document root for CSS variables / read one variable.<small lang="kk">CSS айнымалылары сақталатын түбір / айнымалыны қолдану.</small></dd></div>
+      </dl>
+    </section>
+
+    <section class="guide-section" id="box">
+      <h2>07 · Text, color &amp; box model <small lang="kk">Мәтін, түс және аралықтар</small></h2>
+      <dl>
+        <div><dt><code>color</code> / <code>background-color</code></dt><dd>Text color / element background color.<small lang="kk">Мәтін түсі / элементтің фон түсі.</small></dd></div>
+        <div><dt>HEX / RGB / RGBA / HSL</dt><dd>Color formats; RGBA includes an alpha transparency value.<small lang="kk">Түс жазу форматтары; RGBA ішінде мөлдірлік мәні бар.</small></dd></div>
+        <div><dt><code>font-family</code> / <code>font-size</code> / <code>font-weight</code></dt><dd>Typeface / text size / text thickness.<small lang="kk">Қаріп түрі / мәтін өлшемі / мәтін қалыңдығы.</small></dd></div>
+        <div><dt><code>px</code> / <code>em</code> / <code>rem</code></dt><dd>CSS pixels / local font-relative / root font-relative units.<small lang="kk">CSS пикселі / жергілікті қаріпке / түбір қаріпке тәуелді бірлік.</small></dd></div>
+        <div><dt><code>text-align: right</code> / <code>center</code></dt><dd>Aligns text inside the box, not the box itself.<small lang="kk">Мәтінді қорап ішінде туралайды, қораптың өзін емес.</small></dd></div>
+        <div><dt><code>line-height: 1.6</code></dt><dd>Line height is 1.6 times the font size.<small lang="kk">Жол биіктігі қаріп өлшемінің 1.6 есесі.</small></dd></div>
+        <div><dt><code>letter-spacing</code> / <code>text-transform: uppercase</code></dt><dd>Space between letters / show capital letters.<small lang="kk">Әріп аралығы / бас әріппен көрсету.</small></dd></div>
+        <div><dt><code>text-decoration: none</code></dt><dd>Removes decoration such as a link underline; link still works.<small lang="kk">Сілтеменің астындағы сызықты алып тастайды; сілтеме жұмыс істейді.</small></dd></div>
+        <div><dt><code>white-space: nowrap</code> / <code>list-style: none</code></dt><dd>Stops normal text wrapping / removes list markers.<small lang="kk">Мәтіннің жаңа жолға бөлінуін тоқтатады / тізім маркерлерін алып тастайды.</small></dd></div>
+        <div><dt>Box model</dt><dd>Content → padding → border → margin, from inside out.<small lang="kk">Іштен сыртқа: мазмұн → padding → border → margin.</small></dd></div>
+        <div><dt><code>padding</code> / <code>margin</code></dt><dd>Inner space / outer space.<small lang="kk">Ішкі аралық / сыртқы аралық.</small></dd></div>
+        <div><dt><code>padding-left</code> / <code>margin-top</code></dt><dd>Inner left space / outer space above the element.<small lang="kk">Сол жақ ішкі аралық / элемент үстіндегі сыртқы аралық.</small></dd></div>
+        <div><dt><code>padding-block</code> / <code>margin-inline</code></dt><dd>Top-and-bottom inner space / side outer margins in normal writing.<small lang="kk">Үстіңгі-астыңғы ішкі аралық / әдеттегі жазылымда екі жақтағы сыртқы аралық.</small></dd></div>
+        <div><dt><code>margin: 0 auto</code></dt><dd>Often centers a width-limited block horizontally.<small lang="kk">Ені шектелген блокты көбіне көлденең ортаға қояды.</small></dd></div>
+        <div><dt><code>box-sizing: border-box</code></dt><dd>Declared width includes padding and border.<small lang="kk">Берілген енге padding пен border кіреді.</small></dd></div>
+        <div><dt><code>border-radius</code> / <code>box-shadow</code></dt><dd>Rounded corners / shadow around the box.<small lang="kk">Дөңгелек бұрыштар / қорап айналасындағы көлеңке.</small></dd></div>
+        <div><dt><code>width: 100%; max-width: 300px</code></dt><dd>Uses available width but never exceeds 300px.<small lang="kk">Қолдағы енді алады, бірақ 300px-тен аспайды.</small></dd></div>
+        <div><dt><code>display: block</code> / <code>inline-block</code></dt><dd>New-line block / inline placement with width and height.<small lang="kk">Жаңа жолдағы блок / жол ішінде тұрып ен-биіктік алатын блок.</small></dd></div>
+        <div><dt><code>min-height: 100vh</code></dt><dd>At least one viewport tall.<small lang="kk">Ең аз биіктігі экранның көрінетін биіктігіне тең.</small></dd></div>
+        <div><dt><code>clamp(min, preferred, max)</code></dt><dd>Responsive value kept between minimum and maximum.<small lang="kk">Ең аз және ең көп шек арасындағы адаптивті мән.</small></dd></div>
+        <div><dt><code>min(a, b)</code></dt><dd>Uses the smaller of two values; useful for responsive container widths.<small lang="kk">Екі мәннің кішісін алады; адаптивті контейнер еніне пайдалы.</small></dd></div>
+      </dl>
+    </section>
+
+    <section class="guide-section" id="effects">
+      <h2>08 · Position &amp; effects <small lang="kk">Орналасу және әсерлер</small></h2>
+      <dl>
+        <div><dt><code>position: static</code></dt><dd>Default normal document flow.<small lang="kk">Әдепкі қалыпты құжат орналасуы.</small></dd></div>
+        <div><dt><code>position: relative</code></dt><dd>Stays in flow; can shift from its own place.<small lang="kk">Орнын сақтайды; өз орнына қатысты жылжи алады.</small></dd></div>
+        <div><dt><code>position: absolute</code></dt><dd>Positions against the nearest positioned ancestor.<small lang="kk">Position берілген ең жақын ата-анаға қатысты орналасады.</small></dd></div>
+        <div><dt><code>position: fixed</code></dt><dd>Usually stays at one viewport position while scrolling.<small lang="kk">Бет айналғанда әдетте экрандағы орнын сақтайды.</small></dd></div>
+        <div><dt><code>float: left/right</code> / <code>clear: both</code></dt><dd>Float box to a side / move below floats on both sides.<small lang="kk">Қорапты бір жаққа шығару / екі жақтағы float астына түсіру.</small></dd></div>
+        <div><dt><code>button:hover</code> / <code>a:hover</code></dt><dd>Style while the pointer is over a button / link.<small lang="kk">Меңзер батырма / сілтеме үстінде болғандағы стиль.</small></dd></div>
+        <div><dt><code>cursor: pointer</code></dt><dd>Shows a hand pointer over a clickable element.<small lang="kk">Басылатын элемент үстінде қол белгісін көрсетеді.</small></dd></div>
+        <div><dt><code>transition</code> / <code>transform: scale(1.05)</code></dt><dd>Smooth change / visually enlarge by 5%.<small lang="kk">Біртіндеп өзгеріс / көзге 5% үлкейту.</small></dd></div>
+        <div><dt><code>object-fit: cover</code></dt><dd>Fills the image box, preserving proportions and possibly cropping.<small lang="kk">Пропорцияны сақтап қорапты толтырады; сурет қиылуы мүмкін.</small></dd></div>
+        <div><dt><code>object-position</code> / <code>overflow: hidden</code></dt><dd>Controls visible image area / clips content outside the box.<small lang="kk">Суреттің көрінетін бөлігін басқарады / қораптан асқанды жасырады.</small></dd></div>
+        <div><dt><code>opacity: 0</code> / <code>display: none</code></dt><dd>Transparent but keeps layout space / hidden with no layout space.<small lang="kk">Мөлдір, орны сақталады / жасырын, орны алынған.</small></dd></div>
+        <div><dt><code>z-index</code> / <code>inset: 0</code></dt><dd>Stacking order / zero offsets on all four sides.<small lang="kk">Қабаттасу реті / төрт жақтағы ығысуды нөл ету.</small></dd></div>
+        <div><dt><code>aspect-ratio: 16/10</code></dt><dd>Keeps a 16:10 width-to-height proportion.<small lang="kk">Ен мен биіктіктің 16:10 қатынасын сақтайды.</small></dd></div>
+        <div><dt><code>linear-gradient</code></dt><dd>Smooth transition between colors, often used as an image overlay.<small lang="kk">Түстер арасындағы біртіндеп ауысу, көбіне сурет үстіндегі қабатқа қолданылады.</small></dd></div>
+      </dl>
+    </section>
+
+    <section class="guide-section" id="flex">
+      <h2>09 · Flexbox <small lang="kk">Flexbox</small></h2>
+      <dl>
+        <div><dt>Flexbox</dt><dd>One-dimensional layout: row OR column.<small lang="kk">Бір өлшемді орналасу: жол НЕМЕСЕ баған.</small></dd></div>
+        <div><dt><code>display: flex</code></dt><dd>Parent becomes a flex container; direct children become flex items.<small lang="kk">Ата-ана flex контейнері, тікелей балалары flex элементі болады.</small></dd></div>
+        <div><dt>Main / cross axis</dt><dd>Primary layout direction / direction perpendicular to it.<small lang="kk">Негізгі орналасу бағыты / оған перпендикуляр бағыт.</small></dd></div>
+        <div><dt><code>flex-direction: row</code> / <code>column</code></dt><dd>Horizontal / vertical main axis.<small lang="kk">Көлденең / тік негізгі ось.</small></dd></div>
+        <div><dt><code>row-reverse</code> / <code>column-reverse</code></dt><dd>Same axes, but the visual item direction is reversed.<small lang="kk">Ось сол күйінде, бірақ элементтердің көрінетін бағыты кері болады.</small></dd></div>
+        <div><dt><code>justify-content</code> / <code>align-items</code></dt><dd>Align on main axis / cross axis.<small lang="kk">Негізгі осьте / оған перпендикуляр осьте туралау.</small></dd></div>
+        <div><dt><code>space-between</code></dt><dd>First and last items at the ends; space between items.<small lang="kk">Алғашқы және соңғы элемент шетте, араларында бос орын.</small></dd></div>
+        <div><dt><code>flex-wrap: wrap</code></dt><dd>Items can continue on a new row or column.<small lang="kk">Элементтер келесі жолға не бағанға өте алады.</small></dd></div>
+        <div><dt><code>gap: 20px</code></dt><dd>20px spacing between items, not outside the container.<small lang="kk">Элементтердің арасында 20px, контейнер сыртында емес.</small></dd></div>
+        <div><dt><code>flex-grow</code> / <code>flex-shrink</code></dt><dd>How an item expands / shrinks when space changes.<small lang="kk">Орын өзгергенде элементтің ұлғаюы / кішіреюі.</small></dd></div>
+        <div><dt><code>flex-basis</code></dt><dd>Initial main-axis size before grow or shrink.<small lang="kk">Ұлғаю не кішірею алдындағы негізгі осьтегі бастапқы өлшем.</small></dd></div>
+        <div><dt><code>flex: 1 1 0</code></dt><dd>Shorthand: grow 1, shrink 1, basis 0; useful for equal cards.<small lang="kk">Қысқа жазылым: grow 1, shrink 1, basis 0; тең карточкаларға пайдалы.</small></dd></div>
+        <div><dt><code>align-self</code> / <code>order</code></dt><dd>Cross-axis alignment of one item / visual item order.<small lang="kk">Бір элементтің көлденең осьтегі туралануы / көрінетін реті.</small></dd></div>
+        <div><dt><code>margin-top: auto</code></dt><dd>In a column flex container, pushes an item toward the bottom.<small lang="kk">Бағандық flex ішінде элементті төмен итереді.</small></dd></div>
+      </dl>
+    </section>
+
+    <section class="guide-section" id="grid">
+      <h2>10 · CSS Grid <small lang="kk">CSS торы</small></h2>
+      <dl>
+        <div><dt>Grid</dt><dd>Two-dimensional layout: rows AND columns.<small lang="kk">Екі өлшемді орналасу: жолдар ЖӘНЕ бағандар.</small></dd></div>
+        <div><dt><code>display: grid</code></dt><dd>Parent becomes a grid container; direct children become grid items.<small lang="kk">Ата-ана Grid контейнері, тікелей балалары Grid элементі болады.</small></dd></div>
+        <div><dt>Track / cell / line / area</dt><dd>Row or column / one unit / dividing boundary / rectangular region.<small lang="kk">Жол не баған / бір ұяшық / бөлетін сызық / тікбұрышты аймақ.</small></dd></div>
+        <div><dt><code>grid-template-columns</code> / <code>grid-template-rows</code></dt><dd>Column widths / row heights.<small lang="kk">Баған ені / жол биіктігі.</small></dd></div>
+        <div><dt><code>1fr 2fr</code></dt><dd>Two tracks share available space in a 1:2 ratio.<small lang="kk">Екі бөлік бос орынды 1:2 қатынасында бөледі.</small></dd></div>
+        <div><dt><code>repeat(3, 1fr)</code></dt><dd>Three equal flexible tracks.<small lang="kk">Ені бірдей үш икемді бөлік.</small></dd></div>
+        <div><dt><code>minmax(0, 1fr)</code></dt><dd>Track can shrink toward zero and grow to one fraction.<small lang="kk">Бөлік 0-ге дейін кішірейіп, 1fr-ге дейін өсе алады.</small></dd></div>
+        <div><dt><code>auto</code> / <code>min-content</code> / <code>max-content</code></dt><dd>Adaptive / smallest intrinsic / largest unwrapped intrinsic size.<small lang="kk">Бейімделетін / табиғи ең кіші / жолға бөлінбеген ең үлкен өлшем.</small></dd></div>
+        <div><dt><code>fit-content(300px)</code></dt><dd>Fit content up to the given limit.<small lang="kk">Мазмұнға сай өседі, бірақ көрсетілген шектен аспайды.</small></dd></div>
+        <div><dt><code>gap</code> / <code>row-gap</code> / <code>column-gap</code></dt><dd>All gaps / gaps between rows / between columns.<small lang="kk">Барлық аралық / жолдар арасы / бағандар арасы.</small></dd></div>
+        <div><dt><code>grid-column: 1 / 3</code></dt><dd>From grid line 1 to line 3: two columns.<small lang="kk">1-сызықтан 3-сызыққа дейін: екі баған.</small></dd></div>
+        <div><dt><code>grid-row</code> / <code>grid-area</code></dt><dd>Item's row position / position or named area.<small lang="kk">Элементтің жолдағы орны / орны не атаулы аймағы.</small></dd></div>
+        <div><dt><code>grid-template-areas</code></dt><dd>Named layout map, such as header / sidebar / main / footer.<small lang="kk">header / sidebar / main / footer сияқты атаулы орналасу картасы.</small></dd></div>
+        <div><dt><code>justify-items</code> / <code>align-items</code></dt><dd>All items horizontally / vertically inside their cells.<small lang="kk">Барлық элементті ұяшық ішінде көлденең / тігінен туралау.</small></dd></div>
+        <div><dt><code>justify-content</code> / <code>align-content</code></dt><dd>Whole grid horizontally / vertically when extra space exists.<small lang="kk">Артық орын болса бүкіл Grid-ті көлденең / тігінен туралау.</small></dd></div>
+        <div><dt><code>justify-self</code> / <code>align-self</code></dt><dd>One item horizontally / vertically inside its cell.<small lang="kk">Бір элементті ұяшық ішінде көлденең / тігінен туралау.</small></dd></div>
+        <div><dt><code>grid-auto-rows: 220px</code></dt><dd>Height of rows created automatically.<small lang="kk">Автоматты жасалған жолдардың биіктігі.</small></dd></div>
+        <div><dt>Grid + Flexbox</dt><dd>Grid for the outer layout; Flexbox can align content inside a grid item.<small lang="kk">Сыртқы құрылымға Grid, ұяшық ішіндегі мазмұнға Flexbox қолдануға болады.</small></dd></div>
+      </dl>
+    </section>
+
+    <section class="guide-section" id="responsive">
+      <h2>11 · Responsive &amp; Bootstrap <small lang="kk">Адаптивтік дизайн және Bootstrap</small></h2>
+      <dl>
+        <div><dt><code>@media (max-width: 680px)</code></dt><dd>Rules apply at 680px viewport width or narrower.<small lang="kk">Экран ені 680px не одан аз болғанда ережелер қолданылады.</small></dd></div>
+        <div><dt>Breakpoint</dt><dd>Screen-width threshold where layout rules change.<small lang="kk">Орналасу ережесі өзгеретін экран ені шегі.</small></dd></div>
+        <div><dt><code>prefers-reduced-motion</code></dt><dd>Respects the user's request for less animation.<small lang="kk">Пайдаланушының анимацияны азайту қалауын ескереді.</small></dd></div>
+        <div><dt><code>repeat(auto-fit, minmax(200px, 1fr))</code></dt><dd>Fits as many minimum-200px grid columns as space allows.<small lang="kk">Ең аз ені 200px бағандардың сыйғанынша орналастырады.</small></dd></div>
+        <div><dt>Bootstrap <code>.container</code> / <code>.row</code></dt><dd>Responsive wrapper / grid row; put columns inside the row.<small lang="kk">Адаптивті контейнер / тор жолы; бағандар row ішінде болады.</small></dd></div>
+        <div><dt><code>.col-md-6</code></dt><dd>Six of twelve grid columns from medium screens upward.<small lang="kk">Орта және кең экранда 12 бағанның 6-уы.</small></dd></div>
+        <div><dt><code>.row-cols-lg-3</code></dt><dd>Three columns per row from large screens upward.<small lang="kk">Кең экраннан бастап бір жолда үш баған.</small></dd></div>
+        <div><dt><code>.d-flex</code> / <code>.flex-md-row</code></dt><dd>Turns on Flexbox / uses row direction from medium screens.<small lang="kk">Flexbox қосады / орта экраннан бастап жол бағытын қолданады.</small></dd></div>
+        <div><dt><code>.ms-auto</code> / <code>.g-3</code></dt><dd>Auto start-side margin / grid gutter spacing.<small lang="kk">Бастапқы жақтағы auto margin / тор элементтерінің аралығы.</small></dd></div>
+        <div><dt>Bootstrap navbar toggler</dt><dd>Opens and closes collapsed links on smaller screens.<small lang="kk">Шағын экранда жиналған сілтемелерді ашып-жабады.</small></dd></div>
+        <div><dt>Stylesheet order</dt><dd>Link Bootstrap first, then custom CSS for equal-specificity overrides.<small lang="kk">Specificity бірдей болса өз CSS-ің басым болуы үшін алдымен Bootstrap, кейін өз CSS-іңді қос.</small></dd></div>
+      </dl>
+    </section>
+
+    <div class="guide-end"><a class="button primary" href="index.html">Practice these answers <small lang="kk">Осы жауаптарды куизде қайталау</small></a></div>
+  </main>
+  <footer class="site-footer"><div class="shell">Web Technologies · Weeks 1–3 · HTML &amp; CSS <span>Offline guide · Интернетсіз де ашылады</span></div></footer>
+</body>
+</html>
